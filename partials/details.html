@@ -1,0 +1,29 @@
+<section id="main"  class="artistpage">
+<div style="margin-top:50px;">
+  <h1 style="color:red; text-align:center;">Equities-Stocks Details</h1><br><br>
+    <table id="table-3" cellspacing="0" cellpadding="2">
+      <tr id="1">
+        <th>Serial No</th>
+        <td>Name</td>
+        <td>Symbol</td>
+        <td>Currency</td>
+        <td>Last Price</td>
+        <td>Pricing Date</td>
+        <td>High Price</td>
+        <td>Low Price</td>
+      </tr>
+    <tbody >
+      <tr id="2">
+          <td>{{$index + 1}}</td>
+          <td>{{details.contractName}}</td>
+          <td>{{details.symbol}}</td>
+          <td>{{details.currency}}</td>
+          <td>{{details.lastPrice}}</td>
+          <td>{{details.pricingDate}}</td>
+          <td>{{details.highPrice}}</td>
+          <td>{{details.lowPrice}}</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</section>

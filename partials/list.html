@@ -1,0 +1,21 @@
+<section class="artistpage">
+  <div class="search">
+    <h1>Equities/Stocks list</h1>
+    <label>search: </label>
+    <input ng-model="query" placeholder="Search for List" autofocus>
+
+  </div>
+  <ul class="artistlist">
+    <li ng-animate="'animate'" class="artist cf" ng-repeat="item in List | filter: query | orderBy: artistOrder:direction">
+      <a role="button" id="name">
+        <div class="info">
+          Id: &nbsp;<span style="font-size:20px;" ng-click="value($event)">{{item.id}}</span><br>
+            Name: &nbsp;<span ng-click="value($event)">{{value.name}} </span><br>
+            currency: &nbsp; <span ng-click="value($event)">{{item.currency}}</span><br>
+          secType: &nbsp;<span ng-click="value($event)">{{item.secType}}</span><br>
+        symbol: &nbsp; <span ng-click="value($event)">{{item.symbol}}</span><br>
+        </div>
+      </a>
+    </li>
+  </ul>
+</section>
